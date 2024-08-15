@@ -157,3 +157,25 @@ p{
     box-sizing: border-box;
 }
 
+/*flower
+.title-text p {
+    margin: auto;
+    font-size: 20px;
+    color: #533912;
+    position: relative;
+    font-weight: bold;
+    z-index: 1;
+    display: inline-block;
+    
+    .title-text p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#533912, #fff);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius:35px;  */
