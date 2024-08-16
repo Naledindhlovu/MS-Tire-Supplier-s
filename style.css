@@ -11,10 +11,10 @@ font-family: 'Poppins', sans-serif;
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: url(images/phohu.PNG); /* Only the image, no gradient */
+    background-image: url(images/Asset\ 1.png);
     background-position: center;
-    background-size: 100% 100%; /* Keep the image at its original size */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; /* Ensures the image covers the entire header area */
+    background-repeat: no-repeat;
     position: relative;
     color: #fff;
     padding: 20px 0;
@@ -72,9 +72,37 @@ font-family: 'Poppins', sans-serif;
     background: #796f6e;
     transition: 1s;    
 }
-@media(max-width: 700px){
-    .text-box h1{
+@media (max-width: 700px) {
+    .header {
+        background-position: center top; /* Adjust the image focus on smaller screens */
+        background-size: cover; /* Keeps the image covered but focused on the top */
+    }
+
+    .text-box h1 {
         font-size: 20px;
+    }
+
+    .row {
+        flex-direction: column; /* Stacks the service items vertically */
+        align-items: center;
+    }
+
+    .service,
+    .container-m {
+        flex-basis: 100%; /* Takes full width on small screens */
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        text-align: center; /* Center contact info on small screens */
+    }
+
+    .contact-info div {
+        justify-content: center; /* Center icons and text */
+    }
+
+    .marquee {
+        width: 80%; /* Adjust marquee width for smaller screens */
     }
 }
 /*header*/
@@ -107,6 +135,8 @@ footer p {
     display: flex; /* Use Flexbox to align icon and text */
     align-items: center; /* Vertically align items */
     margin-bottom: 10px; /* Add space between items */
+    padding: 5px;
+    margin: 15px;
 }
 
 .contact-info i {
